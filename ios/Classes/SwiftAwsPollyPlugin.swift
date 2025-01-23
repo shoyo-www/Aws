@@ -24,7 +24,7 @@ public class SwiftAwsPollyPlugin: NSObject, FlutterPlugin {
 
 
       // Region of Amazon Polly.
-      let AwsRegion = AWSRegionType.regionTypeForString(regionString: "eu-north-1")
+      let AwsRegion = region
 
       // Cognito pool ID. Pool needs to be unauthenticated pool with
       // Amazon Polly permissions.
