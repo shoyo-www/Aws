@@ -31,10 +31,10 @@ public class SwiftAwsPollyPlugin: NSObject, FlutterPlugin {
       let CognitoIdentityPoolId = poolId
 
       // Initialize the Amazon Cognito credentials provider.
-      let credentialProvider = AWSCognitoCredentialsProvider(regionType: AwsRegion, identityPoolId: CognitoIdentityPoolId)
+//       let credentialProvider = AWSCognitoCredentialsProvider(regionType: AwsRegion, identityPoolId: CognitoIdentityPoolId)
 
-      let configuration = AWSServiceConfiguration(region: AwsRegion, credentialsProvider: credentialProvider)
-      AWSServiceManager.default().defaultServiceConfiguration = configuration
+//       let configuration = AWSServiceConfiguration(region: AwsRegion, credentialsProvider: credentialProvider)
+//       AWSServiceManager.default().defaultServiceConfiguration = configuration
       
       result(nil)
     case MethodCalls.getUrl:
